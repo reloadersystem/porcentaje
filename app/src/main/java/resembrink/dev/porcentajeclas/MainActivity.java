@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String afp= (calculo*0.07)+"";
 
-                String seguro= (calculo*0.05)+"";
+                String seguro= (calculo*0.15)+"";
 
                 tvidrenta.setText(renta);
                 tvidafp.setText(afp);
