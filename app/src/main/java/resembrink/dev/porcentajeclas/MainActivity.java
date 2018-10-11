@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.rbrenta:
                     {
 
-
-
                         double calculo= Double.parseDouble(etvalor.getText().toString());
 
                          renta= (calculo*0.10)+"";
@@ -83,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
                         tvidafp.setText(afp);
                         tvseguro.setText("");
                         resultado.setText("");
-
-
                         break;
 
                     }
@@ -94,12 +90,10 @@ public class MainActivity extends AppCompatActivity {
                         double calculo= Double.parseDouble(etvalor.getText().toString());
 
                         seguro= (calculo*0.05)+"";
-
                         tvidrenta.setText("");
                         tvidafp.setText("");
                         tvseguro.setText(seguro);
                         resultado.setText("");
-
 
                         valorfinal= calculo - Double.parseDouble(seguro);
 
@@ -109,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
 
         btcalculo.setOnClickListener(new View.OnClickListener() {
