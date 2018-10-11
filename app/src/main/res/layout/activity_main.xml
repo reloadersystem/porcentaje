@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
 
@@ -16,14 +17,45 @@
         android:layout_marginTop="10dp"
         android:text="Sueldo de un Empleado" />
 
+
     <EditText
         android:id="@+id/etsueldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Sueldo  Base"
+
+
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"/>
+
+
+    <RadioGroup
+        android:id="@+id/rgroupdscto"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbrenta"
+            android:text="Renta 10 %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rbafp"
+            android:text="AFP 7 %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rbseguro"
+            android:text="Seguro Social 5 %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -67,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:hint="valor de renta" />
+            android:hint="valor de afp" />
 
 
     </LinearLayout>
@@ -87,7 +119,7 @@
 
         <TextView
             android:id="@+id/idseguro"
-            android:hint="valor de renta"
+            android:hint="valor de seguro social"
             android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -120,6 +152,7 @@
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_marginTop="10dp"
+        android:textStyle="normal"
         android:layout_gravity="center"
         android:layout_height="wrap_content" />
 
